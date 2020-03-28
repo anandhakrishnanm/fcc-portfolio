@@ -1,0 +1,128 @@
+/* general styling */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --navback: rgb(37, 37, 37);
+    --navTextColor: rgb(218, 214, 214);
+}
+body{
+    font-family: 'Lora', serif;
+}
+/* End general styling */
+/* section navbar */
+.nav{
+    background-color: var(--navback);
+    position: fixed;
+    width: 100%;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+
+}
+.nav ul li{
+    list-style: none;
+    margin-right: 3vw;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: var(--navTextColor);
+    font-size: 1.6rem;
+}
+/* end section navbar */
+/* welcome section */
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(90, 116, 121);
+   margin: auto;
+   text-align: center;
+}
+.welcome-text{
+    margin: auto;
+}
+.welcome-heading{
+    font-size: 3rem;
+    color: white;
+}
+.welcome-text{
+    font-size: 1.8rem;
+    color: white;
+}
+/* end welcome section */
+/*styling project section*/
+.project{
+    width: 100vw;
+    background-color: rgb(8, 52, 73);
+
+}
+.project a{
+    text-decoration: none;
+}
+.project-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+}
+.project-header{
+    color: var(--navTextColor);
+    font-size: 2rem;
+}
+.project-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-image{
+    width: 30vw;
+}
+.project-tile{
+    width: 30vw;
+    text-align: center;
+    color: var(--navTextColor);
+    background-color: var(--navback);
+}
+@media screen and (max-width: 600px){
+    .project-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-image,.project-tile{
+        width: 80vw;
+    }
+}
+/*End of Project section*/
+/*styling of contact Section*/
+#contact{
+    background-color: var(--navback);
+}
+.contact-header{
+    display: flex;
+    justify-content: center;
+    color: var(--navTextColor);
+    height: 16vh;
+    align-items: center;
+
+}
+.profile-links{
+    display: flex;
+    justify-content: center;
+}
+.profile-links img{
+    width: 5vw;
+}
+@media screen and (max-width: 600px){
+    .profile-links img{
+        width: 20vw;
+    }
+}
+
+/*ending contact section style*/
